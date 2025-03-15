@@ -9,7 +9,7 @@ def scrape_info(url):
 
         #Sending requests to target website
         headers = {"User-Agent" : "Mozilla/5.0"}
-        response = requests.get(url , headers = headers , timeout=10)
+        response = requests.get(url , headers = headers , timeout=20)
 
         #Checking if request was successful
         if response.status_code != 200:
@@ -50,8 +50,13 @@ def scrape_info(url):
         else:
             print("\nNo links were found")        
 
+    except requests.exceptions.Timeout:
+     print(f"Connection timed out for {url}")
+     return
+
     except requests.exceptions.RequestException as e :
         print(f"An error occurred: {e}")
+        return
 
 
 if __name__ == "__main__":
