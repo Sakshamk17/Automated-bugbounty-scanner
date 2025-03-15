@@ -1,10 +1,9 @@
 {
-    "domains": ["testphp.vulnweb.com"],
-    "sql_injection_urls": [
-      "http://testphp.vulnweb.com/listproducts.php?cat=1"
-    ],
-    "xss_urls": [
-      "http://testphp.vulnweb.com/search.php?query="
-    ]
+  "domains": ["testphp.vulnweb.com"],
+  "sql_urls": {
+      "testphp.vulnweb.com": "http://testphp.vulnweb.com/listproducts.php?cat=1"
+  },
+  "xss_urls": {
+      "testphp.vulnweb.com": "http://testphp.vulnweb.com/search.php?query="
   }
-  
+}
