@@ -16,7 +16,7 @@ def scan_ports(targets):
 
         #print results
         for host in scanner.all_hosts():
-            print(f"\n Host: {host} ({scanner[host].hostname()})")
+            print(f"\n Host: {host} ({scanner[host].hostname()})")      
             for proto in scanner[host].all_protocols():
                 ports = scanner[host][proto].keys()
 
