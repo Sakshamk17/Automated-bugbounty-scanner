@@ -1,0 +1,10 @@
+{
+    "domains": ["testphp.vulnweb.com"],
+    "sql_injection_urls": [
+      "http://testphp.vulnweb.com/listproducts.php?cat=1"
+    ],
+    "xss_urls": [
+      "http://testphp.vulnweb.com/search.php?query="
+    ]
+  }
+  
