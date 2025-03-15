@@ -1,7 +1,7 @@
 import nmap
 
 def scan_ports(targets):
-    print(f" Scanning {targets} for open ports...")
+    print(f"\nScanning {targets} for open ports...\n")
 
     #Initializing nmap scanner
     scanner = nmap.PortScanner()

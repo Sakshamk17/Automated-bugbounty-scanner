@@ -13,6 +13,7 @@ def scan_sql_injection(target_url):
         for line in process.stdout:
             #Printing output
             print(line , end="")
+
         process.wait() # Wait for the sqlmap to finish
 
         print("SQL injection scan completed!\n")

@@ -5,7 +5,7 @@ import re
 
 def scrape_info(url):
     try:
-        print(f"Scraping data from {url}...\n")
+        print(f"\nScraping data from {url}...\n")
 
         #Sending requests to target website
         headers = {"User-Agent" : "Mozilla/5.0"}

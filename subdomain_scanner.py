@@ -1,7 +1,7 @@
 import subprocess
 
 def find_subdomains(domain):
-    print("Finding subdomains for " + domain)
+    print(f"\nFinding subdomains for {domain}\n")
 
     #running sublist3r
     result = subprocess.run(
